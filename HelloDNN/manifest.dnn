@@ -1,0 +1,49 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="HelloDNN" type="Module" version="01.00.00">
+      <friendlyName>Hello DNN</friendlyName>
+      <description>A simple Hello World DNN module</description>
+      <owner>
+        <name>CodeWormer</name>
+        <email>admin@local.com</email>
+      </owner>
+      <components>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>HelloDNN</moduleName>
+            <foldername>HelloDNN</foldername>
+            <businessControllerClass />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Hello DNN</friendlyName>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/HelloDNN/HelloWorld.ascx</controlSrc>
+                    <controlType>View</controlType>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <path>bin</path>
+              <name>HelloDNN.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/HelloDNN</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
